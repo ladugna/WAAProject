@@ -1,6 +1,5 @@
 package miu.edu.cs.cs545.Lab1.controller;
 
-import lombok.Data;
 import miu.edu.cs.cs545.Lab1.domain.Comment;
 import miu.edu.cs.cs545.Lab1.service.CommentService;
 import org.springframework.beans.factory.annotation.Autowired;

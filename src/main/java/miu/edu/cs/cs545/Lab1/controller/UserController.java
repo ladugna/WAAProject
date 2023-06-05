@@ -1,6 +1,6 @@
 package miu.edu.cs.cs545.Lab1.controller;
 
-import miu.edu.cs.cs545.Lab1.domain.Comment;
+import miu.edu.cs.cs545.Lab1.aop.ExecutionTime;
 import miu.edu.cs.cs545.Lab1.domain.Post;
 import miu.edu.cs.cs545.Lab1.domain.User;
 import miu.edu.cs.cs545.Lab1.service.UserService;
@@ -28,6 +28,8 @@ public class UserController {
         return userService.findAll();
     }
 
+
+    @ExecutionTime
     @ResponseStatus(HttpStatus.OK)
     @GetMapping(value = "/{id}")
     public User UserById(@PathVariable("id") long id){

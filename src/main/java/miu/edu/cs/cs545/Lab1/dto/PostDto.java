@@ -1,6 +1,5 @@
 package miu.edu.cs.cs545.Lab1.dto;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 

@@ -1,6 +1,5 @@
 package miu.edu.cs.cs545.Lab1.repository;
 
-import miu.edu.cs.cs545.Lab1.domain.Comment;
 import miu.edu.cs.cs545.Lab1.domain.Post;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;

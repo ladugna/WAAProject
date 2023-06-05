@@ -1,6 +1,5 @@
 package miu.edu.cs.cs545.Lab1.service.impl;
 
-import miu.edu.cs.cs545.Lab1.domain.Comment;
 import miu.edu.cs.cs545.Lab1.domain.Post;
 import miu.edu.cs.cs545.Lab1.repository.PostRepository;
 import miu.edu.cs.cs545.Lab1.service.PostService;

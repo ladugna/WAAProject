@@ -1,6 +1,5 @@
 package miu.edu.cs.cs545.Lab1.domain;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;

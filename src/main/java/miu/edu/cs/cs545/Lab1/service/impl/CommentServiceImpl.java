@@ -4,7 +4,6 @@ import miu.edu.cs.cs545.Lab1.domain.Comment;
 import miu.edu.cs.cs545.Lab1.repository.CommentRepository;
 import miu.edu.cs.cs545.Lab1.service.CommentService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

@@ -1,4 +1,4 @@
-package miu.edu.cs.cs545.Lab1;
+package miu.edu.cs.cs545.lab1;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

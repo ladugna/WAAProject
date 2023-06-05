@@ -1,12 +1,10 @@
 package miu.edu.cs.cs545.Lab1.controller;
 
-import miu.edu.cs.cs545.Lab1.domain.Comment;
+import miu.edu.cs.cs545.Lab1.aop.LogMe;
 import miu.edu.cs.cs545.Lab1.domain.Post;
 import miu.edu.cs.cs545.Lab1.service.PostService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.repository.query.Param;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -18,7 +16,7 @@ public class PostController {
 
     @Autowired
     private PostService postService;
-
+  @LogMe
     @GetMapping
    public ResponseEntity<?> getAllPosts(){
         return new ResponseEntity<> (postService.findAll(), HttpStatus.OK);
