@@ -1,4 +1,4 @@
-package miu.edu.cs.cs545.Lab1.dto;
+package miu.edu.cs.cs545.Lab1.dto.response;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

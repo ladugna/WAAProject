@@ -29,4 +29,7 @@ public interface UserRepository extends JpaRepository<User, Long> {
     Comment findCommentsPost(@Param("uid") int uid,
                              @Param("pid") int pid,
                              @Param("cid") int cid);
+
+
+    User findByEmail(String email);
 }

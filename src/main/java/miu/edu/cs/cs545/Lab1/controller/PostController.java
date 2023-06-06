@@ -6,17 +6,21 @@ import miu.edu.cs.cs545.Lab1.service.PostService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Collection;
 
 @RestController
 @RequestMapping("/posts")
+//@RequestMapping("/api/v1/products")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class PostController {
 
     @Autowired
     private PostService postService;
   @LogMe
+  @PreAuthorize("hasRole('ROLE_USER')")
     @GetMapping
    public ResponseEntity<?> getAllPosts(){
         return new ResponseEntity<> (postService.findAll(), HttpStatus.OK);
