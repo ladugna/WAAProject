@@ -4,7 +4,9 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -13,16 +15,12 @@ import java.time.LocalTime;
 @AllArgsConstructor
 @Data
 @Entity
-public class Logger {
+public class ExceptionTable {
     /*
-    * 1-	Make a ‘Logger’ database table that will
-        store all the operations executed in your project.
-    *  The table should hold the following information
-    * (Transaction Id, Date, Time, Principle, Operation).
-  Since there is no authentication, you may define a
-* fake static user for the principle and add it to every operation.
-* This will be removed on the next lab. You may optionally add any
-* suitable attribute.
+    *
+3-	Make an ‘ExceptionTable’ database table that will track all
+* the exceptions that were thrown (Transaction Id, Date, Time, Principle, Operation, ExceptionTable Type).
+Add a method that throws an exception to test it.
 */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -31,6 +29,5 @@ public class Logger {
     private LocalTime time;
     private String principle;
     private String operation;
-
-
+    private String exceptionType;
 }
